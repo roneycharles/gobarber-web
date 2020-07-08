@@ -47,7 +47,7 @@ export const Container = styled.div<ContainerProps>`
     flex: 1;
     background: transparent;
     border: 0;
-    color: #f4ede8
+    color: #f4ede8;
 
     &::placeholder {
       color: #666360;
@@ -63,5 +63,14 @@ export const Error = styled(Tooltip)`
   margin-left: 16px;
   svg {
     margin: 0;
+  }
+
+  span {
+    background: #c53030;
+    color: #fff;
+
+    &::before {
+      border-color: #c53030 transparent;
+    }
   }
 `;
